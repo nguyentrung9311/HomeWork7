@@ -29,7 +29,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onBallAnimationZiczacClicked(_ sender: Any) {
- 
+        let ziczacVC = mainStoryboard.instantiateViewController(withIdentifier: "ZiczacViewController") as! ZiczacViewController
+        ziczacVC.modalPresentationStyle = .fullScreen
+        present(ziczacVC, animated: true)
     }
 }
 

@@ -61,7 +61,11 @@ class BmiViewController: UIViewController {
         btnSubAge.layer.cornerRadius = btnSubAge.bounds.width / 2.0
         btnAddAge.layer.cornerRadius = btnAddAge.bounds.width / 2.0
     }
-
+    
+    @IBAction func onBackClicked(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     @IBAction func onHeightChanged(_ sender: UISlider) {
         height = Int(sender.value)
         lbHeight.text = "\(height) cm"
